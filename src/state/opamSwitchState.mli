@@ -32,6 +32,7 @@ val with_:
   [< unlocked ] global_state ->
   ('a switch_state -> 'b) -> 'b
 
+val load_switch_config: 'a global_state -> switch -> OpamFile.Dot_config.t
 (** Creates a virtual state with all package available and nothing installed.
     Useful for querying and simulating actions when no switch is yet
     configured, or querying packages directly from the repos *)
